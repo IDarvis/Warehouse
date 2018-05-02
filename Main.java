@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main{
 
-	public static void main(){
+	public void main(){
 		String user_name, url, database;
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter the URL/IP of the DB: ");
@@ -11,7 +11,9 @@ public class Main{
 		database = sc.nextLine();
 		System.out.print("Enter DB username: ");
 		user_name = sc.nextLine();
-		Warehouse w = Warehouse(user_name, url, database);
+		char pw[] = Console.readPassword("Enter your password: ");
+		password = new String(pw);
+		Warehouse w = Warehouse(user_name, url, database, password);
 		System.out.println("Connection to DB established.");
 	}
 

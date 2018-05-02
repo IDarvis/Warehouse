@@ -8,12 +8,12 @@ public class Warehouse{
 	private String url, user_name, database, password;
 
 	/* Constructor to create the connection to the Database using the connector class */
-	public void Warehouse(String user_name, String url, String database){
+	public void Warehouse(String user_name, String url, String database. String password){
 		this.user_name = user_name;
 		this.url = url;
 		this.database = database;
-		this.password = new String(Console.readPassword("Enter your password: "));
-		this.con = Connect(user_name, url, password);
+		this.password = password;
+		this.con = Connect(user_name, url, database, this.password);
 	}
 
 	
