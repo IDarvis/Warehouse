@@ -12,7 +12,7 @@ public class Warehouse{
 	public void Warehouse(String user_name, String url, String database){
 		this.user_name = user_name;
 		this.url = url;
-		this.database = database
+		this.database = database;
 		this.password = console.readPassword("Enter your password: ");
 		this.con = Connect(user_name, url, password);
 	}

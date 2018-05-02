@@ -1,4 +1,4 @@
-import java.sql.*
+import java.sql.*;
 
 public class Connect{
 
@@ -9,6 +9,6 @@ public class Connect{
 		this.user_name = user_name;
 		this.url = "jdbc:oracle:thin:@" + url + ":3306:" + database;
 		this.password = password;
-		this.con = DriverManager.getConnection(this.url, this.user_name, this.password)
+		this.con = DriverManager.getConnection(this.url, this.user_name, this.password);
 	}
 }
