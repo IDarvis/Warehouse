@@ -11,7 +11,7 @@ public class Main{
 		database = sc.nextLine();
 		System.out.print("Enter DB username: ");
 		user_name = sc.nextLine();
-		Warehouse w = new Warehouse(user_name, url, database);
+		Warehouse w = Warehouse(user_name, url, database);
 		System.out.println("Connection to DB established.");
 	}
 
