@@ -1,6 +1,5 @@
 import java.sql.*;
 import java.io.Console;
-import Connect.java;
 
 public class Warehouse{
 	
@@ -13,7 +12,7 @@ public class Warehouse{
 		this.user_name = user_name;
 		this.url = url;
 		this.database = database;
-		this.password = console.readPassword("Enter your password: ");
+		this.password = Console.readPassword("Enter your password: ");
 		this.con = Connect(user_name, url, password);
 	}
 

@@ -1,4 +1,3 @@
-import Warehouse.java;
 import java.util.Scanner;
 
 public class Main{
@@ -18,4 +17,3 @@ public class Main{
 
 }
 
-main()
