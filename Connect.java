@@ -2,12 +2,12 @@ import java.sql.*;
 
 public class Connect{
 
-	Connection con;
+	private Connection con;
 	private String user_name, url, password;
 
-	public void Connect(String user_name, String url, String database, String password) throws SQLException{
+	Connect(String user_name, String url, String database, String password) throws SQLException{
 		this.user_name = user_name;
-		this.url = "jdbc:oracle:thin:@" + url + ":3306:" + database;
+		this.url = "jdbc:mysql://" + url + ":3306:" + database;
 		this.password = password;
 		this.con = DriverManager.getConnection(this.url, this.user_name, this.password);
 	}

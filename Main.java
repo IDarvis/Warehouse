@@ -12,8 +12,8 @@ public class Main{
 		System.out.print("Enter DB username: ");
 		user_name = sc.nextLine();
 		char pw[] = Console.readPassword("Enter your password: ");
-		password = new String(pw);
-		Warehouse w = Warehouse(user_name, url, database, password);
+		String password = new String(pw);
+		Warehouse w = new Warehouse(user_name, url, database, password);
 		System.out.println("Connection to DB established.");
 	}
 
