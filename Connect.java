@@ -6,6 +6,7 @@ public class Connect{
 	private String user_name, url, password;
 
 	Connect(String user_name, String url, String database, String password) throws SQLException{
+		Class.forName("com.mysql.jdbc.Driver");
 		this.user_name = user_name;
 		this.url = "jdbc:mysql://" + url + ":3306:" + database;
 		this.password = password;
