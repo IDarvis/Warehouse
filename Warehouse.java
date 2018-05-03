@@ -8,7 +8,7 @@ public class Warehouse{
 	private String url, user_name, database, password;
 
 	/* Constructor to create the connection to the Database using the connector class */
-	Warehouse(String user_name, String url, String database, String password){
+	Warehouse(String user_name, String url, String database, String password) throws SQLException{
 		this.user_name = user_name;
 		this.url = url;
 		this.database = database;
